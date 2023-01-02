@@ -1,0 +1,3 @@
+
+Metodología BEM 
+El objetivo de BEM es dividir lógicamente las piezas de las que se compone una web
