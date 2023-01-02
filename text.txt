@@ -1,3 +1,13 @@
 
 Metodología BEM 
 El objetivo de BEM es dividir lógicamente las piezas de las que se compone una web
+BEM establece que debemos usar clases para nuestro selectores, clases que se dividen en:
+    - Bloques. Los bloques son nuestros contenedores más grandes que a su vez contienen elementos u otros bloques.
+    - Elementos. Los elementos siempre forman parte de un bloque, normalmente son los botones, textos, imágenes etc.
+    - Modificadores. Los modificadores se usan para establecer estilos diferentes a un mismo bloque o elemento.
+Un ejemplo de su uso sería, tenemos una galaria de distintas fotos:
+    .galeria{} -> esto haría referencia a la galería en general, a todos los elementos
+    .galeria_foto{} -> hace referencia solo a las fotos de la galería
+    .galeria_foto--ciscular{} -> hace referencia a las fotos con la caracteríastica que son circulares
+
+
