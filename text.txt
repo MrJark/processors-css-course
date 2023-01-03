@@ -9,5 +9,9 @@ Un ejemplo de su uso sería, tenemos una galaria de distintas fotos:
     .galeria{} -> esto haría referencia a la galería en general, a todos los elementos
     .galeria_foto{} -> hace referencia solo a las fotos de la galería
     .galeria_foto--ciscular{} -> hace referencia a las fotos con la caracteríastica que son circulares
+------------
+PUG
 
-
+Pug es un generador de templates implementado con Javascript que nos permite escribir un pseudocódigo limpio y fácil de leer que será compilado a HTML.
+Para entroducir elementos hijos, tenemos que usar un tab o 2 espacios pero no podemos usar ambos en el código a la vez, debemos decidir que usar
+    ** En mi opinión, es más sencillo utilizar HTML directamente pero solo por ahora, luego puede ser que cambie
