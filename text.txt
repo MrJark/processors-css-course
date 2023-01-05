@@ -15,3 +15,19 @@ PUG
 Pug es un generador de templates implementado con Javascript que nos permite escribir un pseudocódigo limpio y fácil de leer que será compilado a HTML.
 Para entroducir elementos hijos, tenemos que usar un tab o 2 espacios pero no podemos usar ambos en el código a la vez, debemos decidir que usar
     ** En mi opinión, es más sencillo utilizar HTML directamente pero solo por ahora, luego puede ser que cambie
+
+    - Variables en Pug
+
+En Pug las variables debemos llamarlas antes de declarar cualquier tipo de código html para así evitar porblemas.
+Para inicializar una variable en Pug sería: 
+    - -var nombre-variable = lo-que-queramos-que-sea
+
+Iniciar una varibale con más de un contenido, u array u objeto:
+    - -var nombre-variale = [ 'lo-que-sea1', 'lo-que-sea2', 'lo-que-sea3' ]
+
+Para llamar a estas variables en cualquier parte solo tenemos que poner donde queramos llamarla un ' = nombre-variable ' o ' #{nombre-variable o nombre-arreglo} '
+    Ej: 
+    -var titulo = "Hello World"
+    -var parrafos = ['hola1', 'hola2', 'hola3']
+    h1 = titulo o h1 #{titulo}
+    p = parrafos [0] o p #{parrafos[0]} //el cero es la psoición del elemento que queremos traer a nuestro p o h1 o lo que sea. Se empieza por el 0 y en este caso acaba en el 2 porque solo tenemos 3 elementos
