@@ -7,12 +7,12 @@
 ]
 -var user 
 
-mixin caja 
+mixin caja(imagen, titulo, contenido)
 	.caja 
-		.caja__image: img(src="./images/imagen.png", alt="imagen")
+		.caja__image: img(src="./images/"+imagen)
 		.caja__contenido
-			h3  #{titulos[2]}
-			p Lorem ipsum dolor sit amet.
+			h3=titulo 
+			p=contenido 
 
 
 doctype html
@@ -41,9 +41,9 @@ html
 				each title in titulos 
 					li=title
 		main.contenido 
-			+caja
-			+caja 
-			+caja 
+			+caja('imagen.png', titulos[1], 'Lorem ipsum')
+			+caja('imagen.png', titulos[2], 'Lorem ipsum')
+			+caja('imagen.png', titulos[3], 'Lorem ipsum')
 			
 
 		

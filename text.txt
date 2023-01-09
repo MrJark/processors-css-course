@@ -44,14 +44,15 @@ Para crear CONDICIONALES tenemos la palabra reservada if y el else
 MIXINS
 
 Estos son pedazos de código donde tenemos cierta cantidad de información que podemos tener guardados y poder replicarlos en todo el código. Es igual que una función podemos guardar código replicable. Par allamarla, tenemos que ponerlo en el inicio del código, como las variables con la palabra reservada ' mixin ' y para llamarlo, tenemos que hacerlo con un '+' y el nombre del mixin 
+A estos mixins podemos introducirle los parámetros que queramos que muestres entre paréntesis despues del numbre de su variable
 
-
-Ej: mixin nombre-variable
+Ej: mixin nombre-variable(parametro1, parametro2, parametro3)
     .caja 
-        .caja__image: img(src="./images/imagen.png", alt="imagen")
+        .caja__image: img(src="./images/imagen.png", alt="imagen") / img(src="./images/ , parametro1)
         .caja__contenido
-            h3  #{titulos[2]}
-            p Lorem ipsum dolor sit amet.
+            h3  #{titulos[2]} / h3=parametro2
+            p Lorem ipsum dolor sit amet. / p=parametro3
     
     Para llamarlo:
         +nombre-variable
+        
