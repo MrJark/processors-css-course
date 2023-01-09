@@ -1,7 +1,11 @@
 
 -var titulos = ["PlatziGames",
-'Título principal'
+'Título principal',
+'Subtítulo1',
+'Subtítulo2',
+'Subtítulo3',
 ]
+-var user 
 
 doctype html
 html
@@ -13,7 +17,10 @@ html
 	body
 		header
 			h1  #{titulos[0]}
-			a.boton Registro
+			if user 
+				a Hola #{user}
+			else 
+				a.boton Registro
 		section.intro
 			.intro__imagen  
 				img(src="./images/imagen.png", alt="")
@@ -22,6 +29,8 @@ html
 				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatibus vitae ratione voluptas officia doloribus!
 					sppan Lorem ipsum dolor sit, amet consectetur adipisicing.
 				a.button(href="#") Leer más 
-
+			ul 
+				each title in titulos 
+					li=title 
 
 		

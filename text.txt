@@ -31,3 +31,12 @@ Para llamar a estas variables en cualquier parte solo tenemos que poner donde qu
     -var parrafos = ['hola1', 'hola2', 'hola3']
     h1 = titulo o h1 #{titulo}
     p = parrafos [0] o p #{parrafos[0]} //el cero es la psoición del elemento que queremos traer a nuestro p o h1 o lo que sea. Se empieza por el 0 y en este caso acaba en el 2 porque solo tenemos 3 elementos
+
+Loops y condicionales en Pug 
+
+Para crear un LOOP en pug tenemos que inicializar el comando 'each' y en el cual vamos a guardar una variable y a ella le vamos a enviar la informació de otra que tengamos los datos que qeuremos correr como loops
+
+    Ej: each variable in datos
+    'variable' es donde vamos a tener el loop y 'datos' es donde vamos a sacar la info, en este caso puede ser una lista u objeto 
+
+Para crear CONDICIONALES tenemos la palabra reservada if y elementos
