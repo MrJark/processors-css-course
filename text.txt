@@ -39,4 +39,19 @@ Para crear un LOOP en pug tenemos que inicializar el comando 'each' y en el cual
     Ej: each variable in datos
     'variable' es donde vamos a tener el loop y 'datos' es donde vamos a sacar la info, en este caso puede ser una lista u objeto 
 
-Para crear CONDICIONALES tenemos la palabra reservada if y elementos
+Para crear CONDICIONALES tenemos la palabra reservada if y el else 
+
+MIXINS
+
+Estos son pedazos de código donde tenemos cierta cantidad de información que podemos tener guardados y poder replicarlos en todo el código. Es igual que una función podemos guardar código replicable. Par allamarla, tenemos que ponerlo en el inicio del código, como las variables con la palabra reservada ' mixin ' y para llamarlo, tenemos que hacerlo con un '+' y el nombre del mixin 
+
+
+Ej: mixin nombre-variable
+    .caja 
+        .caja__image: img(src="./images/imagen.png", alt="imagen")
+        .caja__contenido
+            h3  #{titulos[2]}
+            p Lorem ipsum dolor sit amet.
+    
+    Para llamarlo:
+        +nombre-variable

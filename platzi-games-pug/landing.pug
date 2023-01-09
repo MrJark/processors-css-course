@@ -7,6 +7,14 @@
 ]
 -var user 
 
+mixin caja 
+	.caja 
+		.caja__image: img(src="./images/imagen.png", alt="imagen")
+		.caja__contenido
+			h3  #{titulos[2]}
+			p Lorem ipsum dolor sit amet.
+
+
 doctype html
 html
 	head
@@ -31,6 +39,11 @@ html
 				a.button(href="#") Leer más 
 			ul 
 				each title in titulos 
-					li=title 
+					li=title
+		main.contenido 
+			+caja
+			+caja 
+			+caja 
+			
 
 		
